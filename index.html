@@ -348,6 +348,10 @@ th, td {
 	margin-right: 30px;
 }
 
+.form_class{
+	float: right;
+}
+
 /* MEDIA QUERIES */
 
 @media(max-width:1280px) {
@@ -416,7 +420,7 @@ th, td {
 	  display: none;
   }
 }
-@media(max-width:650px) {
+@media(max-width:650px) and (min-width: 585px){
   *{
 	font-size: 15px;
   }
@@ -452,6 +456,9 @@ th, td {
   .search_class{
 	  margin: 0;
   }
+  .form_class{
+	  float: right;
+  }
 }
 
 @media(max-width:585px){
@@ -470,9 +477,13 @@ th, td {
   .column6{
 	display: none;
   }
+  .column5{
+	display: none;
+  }
   .drop_class{
 	margin-left: 35px;
 	margin-right: 5px;
+
   }
   .mob_med_2{
 	margin-left: auto;
@@ -480,9 +491,6 @@ th, td {
   }
   .container-table100{
 	padding: 5px;
-  }
-  .mob_med{
-	display: none;
   }
   .table100.ver6 th{
 	  font-size: 12px;
@@ -496,6 +504,16 @@ th, td {
   .form-inline{
 	  flex-flow: row;
   }
+  .form_class{
+	float: right;
+  }
+  /* .float_med{
+	float:left;
+  }
+  .new_clear_class{
+	  
+  } */
+
 }
 	</style>
 <!--===============================================================================================-->
@@ -1063,7 +1081,7 @@ th, td {
 									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-right: 30px;">sort by branch</button>
 									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-right: 30px;">sort by companies</button>
 									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-right: 30px;">sort by UG/PG</button>
-									<li class="nav-item dropdown med_2">
+									<li class="nav-item dropdown med_2 float_med">
 										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
 										  <!-- Dropdown -->
 										  <button type="button"  class="btn btn-outline-dark drop_class">
@@ -1077,12 +1095,12 @@ th, td {
 										  <a class="dropdown-item" href="#">Something else here</a>
 										</div>
 									</li>
-									<form class="form-inline mob_med_2" style="float: right;">
+									<form class="form-inline mob_med_2 form_class" >
 										<input class="form-control mr-sm-2 " type="search" placeholder="search out here" aria-label="Search">
 										<button class="btn btn-outline-dark my-2 my-sm-0 search_class"  type="submit">Search</button>
 									</form>
 								</div>
-								<div class="acad_row">
+								<div class="acad_row new_clear_class" >
 									<div class="acad_col-1-sm-sm " style="background:#E9EEF4 ;">
 									</div>
 									<div class="acad_col ">
