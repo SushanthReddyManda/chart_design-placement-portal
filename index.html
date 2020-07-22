@@ -4,6 +4,7 @@
 	<title>Table V03</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -328,6 +329,173 @@ th, td {
 
 .child_class tr:nth-child(even) {
     background-color: #f8f6ff;
+}
+
+.dropdown-menu.show {
+	display: block;
+	margin-left: 70px;
+	border: 1px solid black;
+
+}
+.drop_class{
+	border-radius: 2.25rem;
+	margin-left: 90px;
+	margin-right: 30px;
+}
+
+.search_class{
+	border-radius: 2.25rem;
+	margin-right: 30px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width:1280px) {
+  .med_1{
+    display: none;
+  }
+  .med_2{
+	display: inline-block;
+	margin-top: -10px;
+	margin-bottom: -10px;
+  }
+  .column8{
+	display: none;
+  }
+  .rad_med_1{
+	border-top-right-radius: 16px;
+  }
+  .mar_med_1{
+	margin-right:18px;
+  }
+  .mar_med_2{
+	border-left:10px;
+  }
+
+
+}
+
+@media(max-width:996px) and (min-width:890px){
+	.column7{
+		display: none;
+  }
+  .rad_med_2{
+	border-top-right-radius: 16px;
+  }
+  .mar_med_1{
+	margin-right:23px;
+  }
+}
+
+@media(min-width:1280px){
+  .med_2{
+    display: none;
+  }
+  .med_back_2{
+	display:none;
+  }
+}
+
+@media(max-width:890px){
+	.svg_class_med{
+		display: none;
+	}
+	.column8{
+	display: none;
+  }
+  .column7{
+	display: none;
+  }
+  .column6{
+	display: none;
+  }
+  .container-table100{
+	  padding: 15px;
+  }
+  .mob_med{
+	  display: none;
+  }
+}
+@media(max-width:650px) {
+  *{
+	font-size: 15px;
+  }
+  .svg_class_med{
+	display: none;
+  }
+  .column8{
+	display: none;
+  }
+  .column7{
+	display: none;
+  }
+  .column6{
+	display: none;
+  }
+  .drop_class{
+	margin-left: 15px;
+	margin-right: 5px;
+  }
+  .mob_med_2{
+	margin-right: 28px;
+	float: left;
+  }
+  .container-table100{
+	padding: 5px;
+  }
+  .mob_med{
+	display: none;
+  }
+  .table100.ver6 th{
+	  font-size: 15px;
+  }
+  .search_class{
+	  margin: 0;
+  }
+}
+
+@media(max-width:585px){
+  *{
+	font-size: 12px;
+  }
+  .svg_class_med{
+	display: none;
+  }
+  .column8{
+	display: none;
+  }
+  .column7{
+	display: none;
+  }
+  .column6{
+	display: none;
+  }
+  .drop_class{
+	margin-left: 55px;
+	margin-right: 5px;
+  }
+  .mob_med_2{
+	margin-left: auto;
+	margin-top: -10px;
+  }
+  .container-table100{
+	padding: 5px;
+  }
+  .mob_med{
+	display: none;
+  }
+  .table100.ver6 th{
+	  font-size: 12px;
+  }
+  .table100.ver6 td{
+	font-size: 13px;
+  }
+  .search_class{
+	  margin-left: 8px;
+  }
+  .form-inline{
+	  flex-flow: row;
+  }
 }
 	</style>
 <!--===============================================================================================-->
@@ -882,7 +1050,7 @@ th, td {
 							</p>
 						</div>
 						<div class="acad_row">
-							<div class="acad_col-1-lg">
+							<div class="acad_col-1-lg mar_med_1 svg_class_med">
 								<svg style="width: 30px;margin-left:25px;color:grey; margin-bottom:8px; margin-top:130px;" class="svg-inline--fa fa-graduation-cap fa-w-20 fa-fw mr-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="graduation-cap" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M622.34 153.2L343.4 67.5c-15.2-4.67-31.6-4.67-46.79 0L17.66 153.2c-23.54 7.23-23.54 38.36 0 45.59l48.63 14.94c-10.67 13.19-17.23 29.28-17.88 46.9C38.78 266.15 32 276.11 32 288c0 10.78 5.68 19.85 13.86 25.65L20.33 428.53C18.11 438.52 25.71 448 35.94 448h56.11c10.24 0 17.84-9.48 15.62-19.47L82.14 313.65C90.32 307.85 96 298.78 96 288c0-11.57-6.47-21.25-15.66-26.87.76-15.02 8.44-28.3 20.69-36.72L296.6 284.5c9.06 2.78 26.44 6.25 46.79 0l278.95-85.7c23.55-7.24 23.55-38.36 0-45.6zM352.79 315.09c-28.53 8.76-52.84 3.92-65.59 0l-145.02-44.55L128 384c0 35.35 85.96 64 192 64s192-28.65 192-64l-14.18-113.47-145.03 44.56z"></path></svg>
 								<svg style="margin-left:30px;color:grey;margin-bottom:8px;"class="svg-inline--fa fa-user-tie fa-w-14 fa-fw mr-2" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user-tie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z"></path></svg>
 								<img src="menu.png" alt="" style="max-width: 33px;margin-left: 23px;margin-bottom: 8p;">
@@ -891,19 +1059,33 @@ th, td {
 							</div>
 							<div class="acad_col">
 								<div style="background: rgb(233, 238, 244);padding:22px 10px;margin-left: -15.5px;border-top-left-radius:16px ;border-top-right-radius:46px;">
-									<button type="button"  class="btn btn-outline-dark" style="border-radius: 2.25rem;margin-left: 90px;margin-right: 30px;">Sort by year</button>
-									<button type="button"  class="btn btn-outline-dark" style="border-radius: 2.25rem;margin-right: 30px;">sort by branch</button>
-									<button type="button"  class="btn btn-outline-dark" style="border-radius: 2.25rem;margin-right: 30px;">sort by companies</button>
-									<button type="button"  class="btn btn-outline-dark" style="border-radius: 2.25rem;margin-right: 30px;">sort by UG/PG</button>
-									<form class="form-inline" style="float: right;">
-										<input class="form-control mr-sm-2" type="search" placeholder="search out here" aria-label="Search">
-										<button class="btn btn-outline-dark my-2 my-sm-0" style="border-radius: 2.25rem;margin-right: 30px;" type="submit">Search</button>
+									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-left: 90px;margin-right: 30px;">Sort by year</button>
+									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-right: 30px;">sort by branch</button>
+									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-right: 30px;">sort by companies</button>
+									<button type="button"  class="btn btn-outline-dark med_1" style="border-radius: 2.25rem;margin-right: 30px;">sort by UG/PG</button>
+									<li class="nav-item dropdown med_2">
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+										  <!-- Dropdown -->
+										  <button type="button"  class="btn btn-outline-dark drop_class">
+											Drop Down
+										  </button>
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+										  <a class="dropdown-item" href="#">Sort by year</a>
+										  <a class="dropdown-item" href="#">Sort by branch</a>
+										  <div class="dropdown-divider"></div>
+										  <a class="dropdown-item" href="#">Something else here</a>
+										</div>
+									</li>
+									<form class="form-inline mob_med_2" style="float: right;">
+										<input class="form-control mr-sm-2 " type="search" placeholder="search out here" aria-label="Search">
+										<button class="btn btn-outline-dark my-2 my-sm-0 search_class"  type="submit">Search</button>
 									</form>
 								</div>
 								<div class="acad_row">
-									<div class="acad_col-1-sm-sm" style="background:#E9EEF4 ;">
+									<div class="acad_col-1-sm-sm " style="background:#E9EEF4 ;">
 									</div>
-									<div class="acad_col">
+									<div class="acad_col ">
 										<table data-vertable="ver6" style="background-color:rgb(233, 238, 244) ">
 											<thead style="background-color:rgb(233, 238, 244) ;">
 												<tr class="row100 head">
@@ -912,8 +1094,8 @@ th, td {
 													<th style="background-color: #6c7ae0;color: white;"class="column100 column3" data-column="column3">Monday</th>
 													<th style="background-color: #6c7ae0;color: white;"class="column100 column4" data-column="column4">Tuesday</th>
 													<th style="background-color: #6c7ae0;color: white;"class="column100 column5" data-column="column5">Wednesday</th>
-													<th style="background-color: #6c7ae0;color: white;"class="column100 column6" data-column="column6">Thursday</th>
-													<th style="background-color: #6c7ae0;color: white;"class="column100 column7" data-column="column7">Friday</th>
+													<th style="background-color: #6c7ae0;color: white;"class="column100 column6 rad_med_2" data-column="column6">Thursday</th>
+													<th style="background-color: #6c7ae0;color: white;"class="column100 column7 rad_med_1" data-column="column7">Friday</th>
 													<th style="background-color: #6c7ae0;color: white;border-top-right-radius:  16px;"class="column100 column8" data-column="column8">Saturday</th>
 												</tr>
 											</thead>
@@ -1007,7 +1189,9 @@ th, td {
 											</tbody>
 										</table> 
 									</div>
-									<div class="acad_col-1-sm" style="background:#E9EEF4 ;">
+									<div class="acad_col-1-sm mob_med" style="background:#E9EEF4 ;">
+									</div>
+									<div class="acad_col-1-sm med_back_2 " style="background:#E9EEF4 ;">
 									</div>
 								</div>
 							</div>
